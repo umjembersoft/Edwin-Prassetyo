@@ -1,0 +1,67 @@
+Analisa Slideshare.net
+
+----------------------------------------------------------------------------------------
+http://weatherblink.wdgserv.com/weatherblink/lookup/10001
+
+REQUEST
+----------------------------------------------------
+
+GET /weatherblink/lookup/10001 HTTP/1.1
+=> method HTTP yang digunakan untuk meminta resource tertentu dari server
+
+Host: weatherblink.wdgserv.com
+=>Host merupakan nama komputer. Pemberian nama ini spesifik, untuk satu komputer tertentu saja dalam suatu jaringan--
+
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:22.0) Gecko/20100101 Firefox/22.0
+=>User Agent merupakan identitas dari browser yang sedang digunakan, disini User menggunakan browser Mozilla Firefox User Agent berupa sederatan kode string informasi yang dikirim ke web server dari browser yang kita gunakan saat mengakses sebuah halaman web <<
+
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+=>server dapat menerima aplikasi json dan teks javascript
+
+Accept-Language: en-US,en;q=0.5
+=>server dapat menerima bahasa "english-United Stated
+
+Accept-Encoding: gzip, deflate
+=>header accept-Encoding: untuk menerima pengkodean gzip, deflate dalam permintaan HTTP. GZIP adalah metode kompresi yang paling efektif yang tersedia saat ini--
+
+Cookie: ltm-1d=4026882570.20480.0000
+
+Connection: keep-alive
+=>Koneksi yang dapat diakses
+
+----------------------------------------------------------------------------------------
+
+RESPON
+---------------------------------------------------
+HTTP/1.1 200 OK
+=>Server telah menyetujui pengaksesan Blog
+
+Date: Thu, 26 Sep 2013 15:35:08 GMT
+=>Waktu User saat mengakses SLIDESHARE.NET
+
+Server: Apache/2.2.11 (Unix) mod_ssl/2.2.11 OpenSSL/0.9.8c DAV/2 mod_jk/1.2.28
+=> Servernya berupa Apache
+
+Expires: Thu, 26 Sep 2013 15:40:26 GMT
+=> Masa aktif pengaksesan Slideshare.net
+
+Cache-Control: public
+=> pengawasan umum
+
+Pragma: Public
+
+Content-Encoding: gzip
+=> Konten Pengkodean gzip
+
+Vary: Accept-Encoding
+
+Content-Length: 406
+=> Panjang konten halaman web
+
+Connection: close
+
+Content-Type: application/json;charset=UTF-8
+=>Content-Type berupa aplikasi json
+
+Set-Cookie: ltm-1d=4026882570.20480.0000; expires=Fri, 27-Sep-2013 15:35:08 GMT; path=/
+----------------------------------------------------------------------------------------
